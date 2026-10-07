@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง - Bow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Tahoma", sans-serif;
+            background: linear-gradient(135deg, #ffe6f0, #e8f4ff);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff9fc2;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #e85d91;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .nickname {
+            color: #888;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #fff4f8;
+            padding: 25px;
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(232, 93, 145, 0.15);
+        }
+
+        .card h2 {
+            color: #e85d91;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.8;
+        }
+
+        .highlight {
+            margin-top: 25px;
+            padding: 25px;
+            background: linear-gradient(135deg, #ffb6d0, #c7e7ff);
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .highlight h2 {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            .info {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile">
+
+            <!-- เปลี่ยนชื่อไฟล์รูปเป็นรูปของตัวเอง -->
+            <img src="https://scontent.fbkk8-1.fna.fbcdn.net/v/t39.30808-6/484160597_1879867746186638_6088833977639504852_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x1920&ctp=s1280x1920&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7EAG-1lImLkQ7kNvwHBGHe8&_nc_oc=AdohLXsdPCClK1M_oiINKzQ4B4oAcbcT7MDUhAIqCvQqB0CIf23pSIBD0pOpvKL7Wr0&_nc_zt=23&_nc_ht=scontent.fbkk8-1.fna&_nc_gid=8Sw3UTu8JTzNYJWqDBeZgg&_nc_ss=7b2a8&oh=00_AQNJNu_yVq74BGhRbeGvFqz_RXMoLBA6aWGt-GrjyMYnDQ&oe=6ACBA533" alt="รูปโปรไฟล์" class="profile-img">
+
+            <h1>วรรณกานต์ ทับบุญ</h1>
+            <p class="nickname">ชื่อเล่น: Bow (โบว์)</p>
+
+            <p>
+                สวัสดีค่ะ 😊 ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวของฉัน
+            </p>
+
+        </div>
+
+        <div class="info">
+
+            <div class="card">
+                <h2>🎓 การศึกษา</h2>
+                <p>
+                    นักศึกษาชั้นปีที่ 3<br>
+                    สาขาคอมพิวเตอร์และเทคโนโลยีดิจิทัลเพื่อการศึกษา<br>
+                    มหาวิทยาลัยราชภัฏอุตรดิตถ์
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>💻 ความสนใจ</h2>
+                <p>
+                    สนใจด้านเทคโนโลยีดิจิทัล<br>
+                    การเขียนเว็บไซต์<br>
+                    AI และการสร้างสื่อการเรียนรู้
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🎮 งานอดิเรก</h2>
+                <p>
+                    ทำอาหาร เล่นเกม<br>
+                    ถ่ายภาพ และท่องเที่ยว
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🌟 ความฝัน</h2>
+                <p>
+                    อยากมีงานที่ได้ใช้ความสามารถด้านเทคโนโลยี
+                    และมีธุรกิจเล็ก ๆ เป็นของตัวเอง
+                </p>
+            </div>
+
+        </div>
+
+        <div class="highlight">
+            <h2>💗 คติประจำใจ</h2>
+            <p>
+                "ทำวันนี้ให้ดีที่สุด แล้วค่อย ๆ เติบโตไปในแบบของเรา"
+            </p>
+        </div>
+
+        <footer>
+            © 2026 My Profile | Bow
+        </footer>
+
+    </div>
+
+</body>
+</html>
